@@ -1,4 +1,4 @@
-## [Installatio](https://github.com/neovim/neovim/wiki/Installing-Neovim)
+## [Installing NeoVim](https://github.com/neovim/neovim/wiki/Installing-Neovim)
 
 ```shell
 brew install neovim
