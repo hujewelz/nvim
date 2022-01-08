@@ -10,6 +10,8 @@ call plug#end()
 
 set encoding=UTF-8
 set number
+set relativenumber
+set nu
 set autoindent
 set tabstop=4
 set shiftwidth=4
