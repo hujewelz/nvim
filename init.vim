@@ -18,6 +18,7 @@ set laststatus=2
 set ruler
 set autoindent
 set encoding=utf-8
+set clipboard=unnamedplus " 开启系统剪切板
 
 
 call plug#begin()
@@ -35,7 +36,7 @@ Plug 'airblade/vim-gitgutter'
 
 call plug#end()
 
-colorscheme afterglow
+colorscheme onedark
 
 " Goyo
 let g:goyo_height = '98%'
