@@ -1,30 +1,49 @@
-call plug#begin()
-Plug 'https://github.com/vim-airline/vim-airline' " Status bar
-Plug 'https://github.com/ap/vim-css-color' " CSS Color Preview
-Plug 'https://github.com/rafi/awesome-vim-colorschemes' " Retro Scheme
-" Plug 'https://github.com/neoclide/coc.nvim'  " Auto Completion
-Plug 'https://github.com/ryanoasis/vim-devicons' " Developer Icons
-Plug 'https://github.com/preservim/nerdtree' " NerdTree
-
-call plug#end()
-
-set encoding=UTF-8
+syntax on
+filetype plugin indent on
 set number
 set relativenumber
 set nu
-set autoindent
+set showmatch
+set mat=2
 set tabstop=4
 set shiftwidth=4
-set expandtab " 自定将 Tab 转为 space
+set expandtab
 set smarttab
 set softtabstop=4
 set mouse=a
-set cursorline " 光标所在行高亮
-filetype indent on
+set cursorline
+set showcmd
+set noeb
+set laststatus=2
+set ruler
+set autoindent
+set encoding=utf-8
 
+
+call plug#begin()
+
+Plug 'vim-airline/vim-airline' " Status bar
+Plug 'preservim/nerdtree'
+Plug 'ryanoasis/vim-devicons'
+Plug 'rafi/awesome-vim-colorschemes'
+Plug 'ap/vim-css-color' " CSS Color Preview
+
+Plug 'godlygeek/tabular'
+Plug 'plasticboy/vim-markdown'
+Plug 'junegunn/goyo.vim'
+Plug 'airblade/vim-gitgutter'
+
+call plug#end()
 
 colorscheme afterglow
 
-nnoremap <C-f> :NERDTreeFocus<CR>
-nnoremap <C-n> :NERDTree<CR>
-nnoremap <C-t> :NERDTreeToggle<CR>
+map <C-r> :source ~/.config/nvim/init.vim<CR>
+map <C-g> :Goyo<CR>
+
+map <C-f> :NERDTreeFocus<CR>
+map <C-t> :NERDTreeToggle<CR>
+
+nnoremap <UP>    :resize +2<CR>
+nnoremap <Down>  :resize -2<CR>
+nnoremap <Left>  :vertical resize +2<CR>
+nnoremap <Right> :vertical resize -2<CR>
