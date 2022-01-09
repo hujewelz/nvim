@@ -37,6 +37,12 @@ call plug#end()
 
 colorscheme afterglow
 
+" Goyo
+let g:goyo_height = '98%'
+let g:goyo_width = 200
+
+let g:vim_markdown_folding_disabled = 1
+
 map <C-r> :source ~/.config/nvim/init.vim<CR>
 map <C-g> :Goyo<CR>
 
