@@ -78,11 +78,11 @@ let g:rustfmt_autosave = 1
 " lua require('lspconfig').rust_analyzer.setup({})
 
 
-map <C-r> :source ~/.config/nvim/init.vim<CR>
 map <C-g> :Goyo<CR>
 
 map <C-f> :NERDTreeFocus<CR>
 map <C-t> :NERDTreeToggle<CR>
+map <C-r> :NERDTreeRefreshRoot<CR>
 
 nnoremap <Space> :
 nnoremap <UP>    :resize +2<CR>
