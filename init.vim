@@ -50,6 +50,7 @@ map <C-g> :Goyo<CR>
 map <C-f> :NERDTreeFocus<CR>
 map <C-t> :NERDTreeToggle<CR>
 
+nnoremap <Space> :
 nnoremap <UP>    :resize +2<CR>
 nnoremap <Down>  :resize -2<CR>
 nnoremap <Left>  :vertical resize +2<CR>
