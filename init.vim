@@ -19,7 +19,8 @@ set ruler
 set autoindent
 set encoding=utf-8
 set clipboard=unnamedplus " 开启系统剪切板
-
+set showtabline=1
+set tabpagemax=15
 
 call plug#begin()
 
@@ -75,7 +76,6 @@ let g:rustfmt_autosave = 1
 
 " setup rust language server
 " lua require('lspconfig').rust_analyzer.setup({})
-" lua require('rust-tools').setup({})
 
 
 map <C-r> :source ~/.config/nvim/init.vim<CR>
