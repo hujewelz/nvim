@@ -26,6 +26,8 @@ lua require('plugins')
 
 colorscheme onedark
 
+set termguicolors
+lua require('bufferline').setup{}
 " Goyo
 let g:goyo_height = '98%'
 let g:goyo_width = 200

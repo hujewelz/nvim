@@ -11,7 +11,6 @@ return require('packer').startup(function()
   use 'ryanoasis/vim-devicons'
 
   -- File tree
-  use 'kyazdani42/nvim-web-devicons' --for file icons
   use 'kyazdani42/nvim-tree.lua'
 
   use 'godlygeek/tabular'
@@ -19,8 +18,7 @@ return require('packer').startup(function()
   use 'junegunn/goyo.vim'
   use 'airblade/vim-gitgutter'
   use 'rust-lang/rust.vim'
-
-  -- To enable more of the features of rust-analyzer, such as inlay hints and more!
+   -- To enable more of the features of rust-analyzer, such as inlay hints and more!
   use 'simrat39/rust-tools.nvim'
   -- Collection of common configurations for the Nvim LSP client
   use 'neovim/nvim-lspconfig'
@@ -54,4 +52,7 @@ return require('packer').startup(function()
 -- Finder over lists
   use 'nvim-lua/plenary.nvim'
   use 'nvim-telescope/telescope.nvim'
+
+  -- using packer.nvim
+  use {'akinsho/bufferline.nvim', tag = "v2.*", requires = 'kyazdani42/nvim-web-devicons'}
 end)

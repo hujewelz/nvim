@@ -74,6 +74,11 @@ _G.packer_plugins = {
     path = "/Users/luobobo/.local/share/nvim/site/pack/packer/start/awesome-vim-colorschemes",
     url = "https://github.com/rafi/awesome-vim-colorschemes"
   },
+  ["bufferline.nvim"] = {
+    loaded = true,
+    path = "/Users/luobobo/.local/share/nvim/site/pack/packer/start/bufferline.nvim",
+    url = "https://github.com/akinsho/bufferline.nvim"
+  },
   ["cmp-buffer"] = {
     loaded = true,
     path = "/Users/luobobo/.local/share/nvim/site/pack/packer/start/cmp-buffer",

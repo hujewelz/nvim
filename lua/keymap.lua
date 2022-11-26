@@ -35,3 +35,7 @@ nkeymap('<silent> ga', '<cmd>lua vim.lsp.buf.code_action()<CR>')
 -- Goto previous/next diagnostic warning/error
 nkeymap('<silent> g[', '<cmd>lua vim.diagnostic.goto_prev()<CR>')
 nkeymap('<silent> g]', '<cmd>lua vim.diagnostic.goto_next()<CR>')
+
+-- bufferline
+nkeymap('<silent> b]', ':BufferLineCyclePrev<CR>')
+nkeymap('<silent> [b', ':BufferLineCycleNext<CR>')
