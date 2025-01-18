@@ -9,9 +9,8 @@ brew install neovim
 Make a *nvim* directory in *.config* directory in your home directory:
 
 ```bash
-mkdir -p ~/.config/vim
+mkdir -p ~/.config/nvim
 
-nvim init.vim
 ```
 
 ## [Plugin Management](https://github.com/wbthomason/packer.nvim)
